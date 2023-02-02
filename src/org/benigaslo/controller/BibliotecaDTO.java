@@ -1,4 +1,5 @@
 package org.benigaslo.controller;
+//Data Transfer Object
 
 public class BibliotecaDTO {
     public String nombre;

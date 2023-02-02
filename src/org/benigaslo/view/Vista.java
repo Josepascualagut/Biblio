@@ -1,7 +1,7 @@
 package org.benigaslo.view;
 
 import org.benigaslo.controller.BibliotecaDTO;
-import org.benigaslo.model.Biblioteca;
+import org.benigaslo.model.Agenda;
 
 import java.util.List;
 import java.util.Scanner;
@@ -11,8 +11,8 @@ public class Vista {
 
     public void mostrarMenu() {
         System.out.println("MENU");
-        System.out.println("1) Añadir biblioteca");
-        System.out.println("2) Ver bibliotecas");
+        System.out.println("1) Añadir contacto");
+        System.out.println("2) Ver contacto");
     }
 
     public int pedirOpcion() {
@@ -23,10 +23,10 @@ public class Vista {
         return opcion;
     }
 
-    public void mostrarBibliotecas(List<Biblioteca> bibliotecas) {
-        System.out.println("LISTA DE Bibliotecas");
+    public void mostrarBibliotecas(List<Agenda> agendas) {
+        System.out.println("Lista de Bibliotecas");
 
-        bibliotecas.forEach(biblioteca -> System.out.println(biblioteca.nombre + " : " + biblioteca.ciudad));
+        agendas.forEach(agenda-> System.out.println(agenda.titol));
     }
 
     public BibliotecaDTO pedirDatosBibliotecaNueva() {

@@ -7,15 +7,15 @@ import java.util.List;
 
 public class Modelo {
 
-    List<Biblioteca> bibliotecas = new ArrayList<>();
+    List<Agenda> agenda = new ArrayList<>();
 
 
     public void guardarBiblioteca(BibliotecaDTO datos){
-        bibliotecas.add(new Biblioteca(datos.nombre, datos.ciudad));
+        agenda.add(new Agenda());
     }
 
 
-    public List<Biblioteca> obtenerListaBibliotecas() {
-        return bibliotecas;
+    public List<Agenda> obtenerListaBibliotecas() {
+        return agenda;
     }
 }

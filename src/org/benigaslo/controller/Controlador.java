@@ -1,6 +1,6 @@
 package org.benigaslo.controller;
 
-import org.benigaslo.model.Biblioteca;
+import org.benigaslo.model.Agenda;
 import org.benigaslo.model.Modelo;
 import org.benigaslo.view.Vista;
 
@@ -20,8 +20,8 @@ public class Controlador {
 
             if (o == 2) {
 
-                List<Biblioteca> bibliotecas = modelo.obtenerListaBibliotecas();
-                vista.mostrarBibliotecas(bibliotecas);
+                List<Agenda> agenda = modelo.obtenerListaBibliotecas();
+                vista.mostrarBibliotecas(agenda);
 
 
             } else if (o == 1) {
