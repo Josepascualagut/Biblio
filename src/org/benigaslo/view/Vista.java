@@ -26,7 +26,7 @@ public class Vista {
     public void mostrarBibliotecas(List<Agenda> agendas) {
         System.out.println("Lista de Bibliotecas");
 
-        agendas.forEach(agenda-> System.out.println(agenda.titol));
+        agendas.forEach(agenda -> System.out.println(agenda.titol));
     }
 
     public BibliotecaDTO pedirDatosBibliotecaNueva() {
