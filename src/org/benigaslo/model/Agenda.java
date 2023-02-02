@@ -6,6 +6,7 @@ import java.util.List;
 public class Agenda {
 
     public String titol;
+    public String descripcion;
     public List<Contacto> contactos = new ArrayList<>();
 
 }

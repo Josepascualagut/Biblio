@@ -1,6 +1,6 @@
 package org.benigaslo.model;
 
-import org.benigaslo.controller.BibliotecaDTO;
+import org.benigaslo.controller.AgendaDTO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,12 +10,12 @@ public class Modelo {
     List<Agenda> agenda = new ArrayList<>();
 
 
-    public void guardarBiblioteca(BibliotecaDTO datos){
+    public void guardarBiblioteca(AgendaDTO datos){
         agenda.add(new Agenda());
     }
 
 
-    public List<Agenda> obtenerListaBibliotecas() {
+    public List<Agenda> obtenerListaAgenda() {
         return agenda;
     }
 }
