@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Controlador {
 
-
+//fdgsdsf
     public void aCorrer(){
         Vista vista = new Vista();
         Modelo modelo = new Modelo();
@@ -30,7 +30,5 @@ public class Controlador {
                 modelo.guardarBiblioteca(datos);
             }
         }
-
-
     }
 }
