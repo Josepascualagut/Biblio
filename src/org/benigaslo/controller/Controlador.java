@@ -18,17 +18,16 @@ public class Controlador {
 
             int o = vista.pedirOpcion();
 
-
-            if (o == 2) {
-
-                List<Agenda> agenda = modelo.obtenerListaAgenda();
-                vista.mostrarAgenda(agenda);
-
-            } else if (o == 1) {
+           if (o == 1) {
                 AgendaDTO datos = vista.pedirDatosAgendaNueva();
 
                 modelo.guardarBiblioteca(datos);
-            }
+
+            } else if (o == 2) {
+               List<Agenda> agenda = modelo.obtenerListaAgenda();
+               vista.mostrarAgenda(agenda);
+
+           }
         }
     }
 }

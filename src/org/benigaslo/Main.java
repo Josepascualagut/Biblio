@@ -11,3 +11,15 @@ public class Main {
         new Controlador().aCorrer();
     }
 }
+
+
+/*
++-------+                              +-------------+                                 +-------+
+|       | ------ dades guardades ----> |             | ----- què mostrar / dades ----> |       |           O
+| MODEL |                              | CONTROLADOR |                                 | VISTA |         / | \
+|       | <--- actualització dades --- |             | <------ entrada usuari -------- |       |          | |
++-------+                              +-------------+                                 +-------+          _  _
+
+
+
+ */
