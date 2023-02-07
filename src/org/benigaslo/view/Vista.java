@@ -33,7 +33,7 @@ public class Vista {
         System.out.println("Nombre: ");   // ProfesInfo
         String nombre = scanner.nextLine();
         System.out.println("Descripcion: ");  // Profesores de informatica de catalunya
-        String description = scanner.nextLine();
+String description = scanner.nextLine();
 
         return new AgendaDTO(nombre,description);
 

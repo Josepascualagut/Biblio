@@ -9,6 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
         new Controlador().aCorrer();
+
     }
 }
 
@@ -18,8 +19,8 @@ public class Main {
 |       | ------ dades guardades ----> |             | ----- què mostrar / dades ----> |       |           O
 | MODEL |                              | CONTROLADOR |                                 | VISTA |         / | \
 |       | <--- actualització dades --- |             | <------ entrada usuari -------- |       |          | |
-+-------+                              +-------------+                                 +-------+          _  _
-
++-------+                              +-------------+                                 +-------+          | |
+                                                                                                          _ _
 
 
  */

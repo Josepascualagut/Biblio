@@ -13,6 +13,7 @@ public class Controlador {
         Vista vista = new Vista();
         Modelo modelo = new Modelo();
 
+
         while(true) {
             vista.mostrarMenu();
 
@@ -26,6 +27,7 @@ public class Controlador {
             } else if (o == 2) {
                List<Agenda> agenda = modelo.obtenerListaAgenda();
                vista.mostrarAgenda(agenda);
+
 
            }
         }

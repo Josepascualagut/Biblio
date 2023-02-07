@@ -14,7 +14,6 @@ public class Modelo {
         agenda.add(new Agenda());
     }
 
-
     public List<Agenda> obtenerListaAgenda() {
         return agenda;
     }
