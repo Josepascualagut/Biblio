@@ -21,6 +21,4 @@ public class Main {
 |       | <--- actualització dades --- |             | <------ entrada usuari -------- |       |          | |
 +-------+                              +-------------+                                 +-------+          | |
                                                                                                           _ _
-
-
  */
