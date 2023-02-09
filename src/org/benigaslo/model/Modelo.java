@@ -7,14 +7,20 @@ import java.util.List;
 
 public class Modelo {
 
-    List<Agenda> agenda = new ArrayList<>();
+    List<Agenda> agendas = new ArrayList<>();
 
 
-    public void guardarBiblioteca(AgendaDTO datos){
-        agenda.add(new Agenda());
+    public void guardarAgenda(AgendaDTO datos){
+        Agenda agenda = new Agenda();
+
+        agenda.titol = datos.nombre;
+        agenda.descripcion = datos.descripcion;
+
+
+        agendas.add(agenda);
     }
 
     public List<Agenda> obtenerListaAgenda() {
-        return agenda;
+        return agendas;
     }
 }

@@ -8,7 +8,6 @@ import java.util.List;
 
 public class Controlador {
 
-//fdgsdsf
     public void aCorrer(){
         Vista vista = new Vista();
         Modelo modelo = new Modelo();
@@ -21,15 +20,12 @@ public class Controlador {
 
            if (o == 1) {
                 AgendaDTO datos = vista.pedirDatosAgendaNueva();
-
-                modelo.guardarBiblioteca(datos);
+                modelo.guardarAgenda(datos);
 
             } else if (o == 2) {
                List<Agenda> agenda = modelo.obtenerListaAgenda();
                vista.mostrarAgenda(agenda);
-
-
-           }
+            }
         }
     }
 }

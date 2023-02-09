@@ -10,30 +10,31 @@ public class Vista {
     Scanner scanner = new Scanner(System.in);
 
     public void mostrarMenu() {
-        System.out.println("MENU");
+        System.out.println();
+        System.out.println("----------------------------------");
+        System.out.println("              MENU");
         System.out.println("1) Añadir Agenda");
         System.out.println("2) Ver Agenda");
     }
 
     public int pedirOpcion() {
         System.out.println("Opcion: ");
-        int opcion = scanner.nextInt();
-        scanner.nextLine();
+        int opcion = scanner.nextInt(); scanner.nextLine();
 
         return opcion;
     }
 
     public void mostrarAgenda(List<Agenda>agendas) {
-        System.out.println("Lista de Agenda");
+        System.out.println("Lista de Agendas");
 
-        agendas.forEach(agenda -> System.out.println(agenda.titol));
+       agendas.forEach(agenda -> System.out.println(agenda.titol + ":" + agenda.descripcion));
     }
 
     public AgendaDTO pedirDatosAgendaNueva() {
         System.out.println("Nombre: ");   // ProfesInfo
         String nombre = scanner.nextLine();
         System.out.println("Descripcion: ");  // Profesores de informatica de catalunya
-String description = scanner.nextLine();
+        String description = scanner.nextLine();
 
         return new AgendaDTO(nombre,description);
 
